@@ -1,0 +1,155 @@
+theme
+  name: minimal
+  <html>
+    
+<head>
+        
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+<title>pai_blog</title>
+
+<script type="text/javascript">
+	
+	function contxt()
+	{
+		alert("哈哈，我来了！");
+	}
+
+	function delight()
+	{
+		var message=confirm("你开心吗？");
+		if (message==true)
+		{
+			document.write("你开心我也开心");
+		}
+		else
+		{
+			document.write("那我给你讲个笑话吧，好不好");
+		}
+	}
+
+	function search()
+	{
+		var keyword=prompt("请输入要查找的关键词");
+		if (keyword != null) 
+		{
+			alert("正在为您搜索");
+		} 
+		else 
+		{
+			alert("请输入关键字");
+		}
+	}
+
+	function WopenTest()
+	{
+		window.open('https://blog.csdn.net/cong_jiang_/article/details/80851975','_blank','width=600,height=400');
+	}
+
+</script>
+
+<style	type="text/css">
+	#container{
+		width:1440px;
+		height: 20px;
+		background-color: pink; 
+	}
+	
+	#menu{ 
+		width: 300px;
+		height: 550px
+		background-color: pink;
+		float: left;
+	}
+/* #menu h1{
+		font-size: 50px;
+		line-height: 60px
+		font-weight: bold;
+		color: red;
+		font-family: "Comic Sans MS", sans-serif
+	}
+*/
+	
+	/*#menu a{
+			display: block;
+			font-size: 30px;
+			line-height: 60px
+			font-weight: bold;
+			color: red;
+			font-family: "Comic Sans MS", cursive, sans-serif
+	}
+	*/
+	
+	#content{
+		width: 1000px;
+		height:550px;
+		background-color: gray;
+		float :right;
+	}
+	
+	#footer{
+		width :1440px;
+		height :50px;
+		background-color: yellow;
+		text-align: center;
+		clear: both;
+	}
+
+</style>
+
+</head>
+   
+ 
+<body>
+
+	<div id="container">
+		<form>
+			<input type="button" name="test_button" value="click" onclick="contxt()"/>
+		</form>
+	</div>
+
+	<div id="menu" style="background-color: pink;" >
+		my blog<br>
+		<a href="url/myessay" title="no click">home</a>
+		<br>
+		<a href="" title="no click">categories</a>
+		<br>
+		<a href="" title="no click">photos</a>	
+		<br>
+		<a href="" title="no click">search</a>
+		<br>
+	</div>
+	        
+	
+ 	<div id="content">
+		<span>hello , this is my blog!</span>
+		
+		<input type="button" name="delight_button" value="点我试试" onclick="delight()"/>
+		
+		</br>
+		
+		<div id="essays" >
+			<h2>my essays<h2>
+			choose essays:
+			<form	method="get"	action="congjiang.php">
+			<a href="" title="essay"	target="_blank">
+				Fortran implicit
+			</a>
+			<input type="button"	name="essay1" value="点我看文章" ondblclick="WopenTest()" />
+			
+			<input type="text"	name="essay1">
+			
+			<br>
+			<input type="button" name="search_button" value="搜索" onclick="search()" />
+			
+			</form>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		This is footer O(∩_∩)O
+	</div>
+</body>
+
+</html>
